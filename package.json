@@ -1,18 +1,43 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "push-pwa",
+  "version": "0.0.0",
   "scripts": {
-    "start": "node server.js"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "start-pwa": "ng build --configuration production && http-server -o dist/push-pwa"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "web-push": "^3.4.3"
+    "@angular/animations": "^14.2.0",
+    "@angular/common": "^14.2.0",
+    "@angular/compiler": "^14.2.0",
+    "@angular/core": "^14.2.0",
+    "@angular/forms": "^14.2.0",
+    "@angular/platform-browser": "^14.2.0",
+    "@angular/platform-browser-dynamic": "^14.2.0",
+    "@angular/pwa": "^0.5.3",
+    "@angular/router": "^14.2.0",
+    "@angular/service-worker": "^14.2.0",
+    "http-server": "^14.1.1",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.9",
+    "@angular/cli": "~14.2.9",
+    "@angular/compiler-cli": "^14.2.0",
+    "@types/jasmine": "~4.0.0",
+    "jasmine-core": "~4.3.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.7.2"
   }
 }
+
